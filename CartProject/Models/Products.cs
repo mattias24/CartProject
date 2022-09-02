@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CartProject.Data.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CartProject.Models
@@ -26,7 +27,7 @@ namespace CartProject.Models
         public string Image { get; set; }
        
         [NotMapped]
-        [FileExtensions]
+        [FileExtension]
         public IFormFile ImageUpload { get; set; }
 
 

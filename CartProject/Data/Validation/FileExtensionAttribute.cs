@@ -9,9 +9,9 @@ namespace CartProject.Data.Validation
         {
             if (value is IFormFile file)
             {
-                var extensions = Path.GetExtension(file.FileName);
-                string[] extension = { "jpg", "png" };
-                bool result = extensions.Any(x => extensions.EndsWith(x));
+                var extension = Path.GetExtension(file.FileName);
+                string[] extensions = { "jpg", "png" };
+                bool result = extensions.Any(x => extension.EndsWith(x));
 
                 if (!result)
                 {

@@ -1,5 +1,7 @@
 using CartProject.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using CartProject.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
